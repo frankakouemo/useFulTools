@@ -1,0 +1,9 @@
+curl -IXGET http://example.com
+-H "Pragma: akamai-x-get-cache-key, akamai-x-check-cacheable"
+
+
+some headers for cache controls : 
+-          akamai-x-cache-on
+-          akamai-x-cache-remote-on
+-          akamai-x-check-cacheable
+-          akamai-x-get-cache-key
