@@ -1,0 +1,11 @@
+Au passage pour récupérer l'IP de staging, il faut faire la manipulation suivante:
+1.      Resolution du hostname pour récupérer le edge hostname: 
+      origin.bla.com     ==> origin.bla.com.edgekey.net.
+      $ nslookup origin.bla.com
+      
+2.      Resolution du edge hostname en version "–staging" pour récupérer l'IP:     
+      origin.bla.edgekey-staging.net.    ==> XX.XXX.XXX.YYY@ip
+ 
+En refaisant le test avec cette IP, ca fonctionne :
+ 
+$ curl -IXGET "https://origin.bla.com/?query=toto&query2=tata" --resolve origin.bla.com:443:XX.XXX.XXX.YYY@ip
