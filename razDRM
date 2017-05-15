@@ -1,0 +1,1 @@
+curl -X POST  "https://secure-webtv.canal-plus.com/WebPortal/ottlivetv/api/v4/zones/ANT/devices/0/apps/0/jobs/razdrmforgroup"  --data '{ "ServiceRequest": { "InData": { "Key":"TEST24" } } }'
