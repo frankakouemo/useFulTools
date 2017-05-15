@@ -1,0 +1,4 @@
+curl --resolce `host:@port:@ip_addres:` full_Url 
+
+sample : 
+curl --resolve static.canal-overseas.com:80:23.201.227.74 http://static.canal-overseas.com/image-api/test >> /tmp/test.jpg
