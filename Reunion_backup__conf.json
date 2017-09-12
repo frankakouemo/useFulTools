@@ -1,0 +1,199 @@
+{
+"id": 998,
+"vodCatalogs": [
+{
+"title": "CANAL+",
+"logoUrl": "https://static.canal-overseas.com/x1/img/logo-ald-canalplus.svg",
+"channels": [
+60401,
+60014,
+60020,
+60022,
+60312
+],
+"applicationType": "internalAld",
+"url": "http://vod.canal-overseas.com/vod-subscription-api/services/subscription-c-ald/vectors/67001/devices/x1/universes?template=gabaritlist",
+"name": "cplusald"
+},
+{
+"title": "CINE+",
+"logoUrl": "https://static.canal-overseas.com/x1/img/logo-ald-cineplus.svg",
+"channels": [
+60027,
+60028
+],
+"applicationType": "internalAld",
+"url": "http://vod.canal-overseas.com/vod-subscription-api/services/subscription-cine-ald/vectors/67001/devices/x1/universes?template=gabaritlist",
+"name": "cineplusald"
+},
+{
+"title": "RadioLine",
+"logoUrl": "http://static.canal-overseas.com/x1/img/logo-radioline.png",
+"channels": [
+60095,
+60188
+],
+"applicationType": "externalAld",
+"url": "http://x1-tools.canal-overseas.com/apps/radioCOS/?zone=50",
+"name": "RadioLine"
+},
+{
+"title": "CATAlog HODOR",
+"logoUrl": "http://static.canal-overseas.com/x1/img/OCS.png",
+"channels": [
+60045
+],
+"applicationType": "internalHodorAld",
+"url": "https://hodor.canalplus.pro/api/v1/page/{token}/5937.json?cache=300000",
+"name": "catalog_Hodor",
+"urlToken": "https://hodor.canalplus.pro/api/v1/authenticate.json/x1/1.0?geozone=60&macros=LVTV_CP,TV_CS,EAD_TR,TV_CP,SERVICES,LVTV_CS,ALD_CP,ALD_CS&highResolution=1&micros=TV_CS:[RTV_PANO],EAD_TR:[-1],TV_CP:[RTV_BASIC_AX,RTV_PREM_AX,RTV_CP_BASIC_AHX],FOOTP_TR:[-1],SERVICES:[READ_TR,RMNJ_CS,RMULTI_ECR_CP,RMULTI_ECR_CS,RAPP_FOOT,RAPP_RUGBY,RAPP_F1],MYCANAL:[RMC_FLX2,RMC_DEV5,RMC_D2G],CPL_INF:[],ALD_CP:[CP_ALD,CP_ALD_X,CP_ALD_CIN,CP_ALD_SPT,CP_ALD_SER,CP_ALD_FAM],ALD_CS:[RALD_PANO,RALD_CS_BASIC,RALD_MTPANO,RALD_OCS]&pdsNormal=[1,2,3,4,5,6,8,9,10,11,12,13,17,18,26,30,34,36,37,44,47,51,56,60,64,65,68,69,70,71,72,76,78,82,83,84,85,89,91,92,93,94,95,96,99,101,103,104,106,112,113,114,115,117,121,122,123,124,126,127,129,137,142,148,150,154,165,173,174,177,198,200,201,205,207,209,210,213,221,223,224,226,228,231,232,233,234,240,243,245,246,247,248,252,257,259,268,270,272,274,276,281,282,284,286,287,290,292,294,296,298,301,302,304,308,310,311,312,313,314,317,319,320,321,324,330,331,336,339,341,342,352,356,358,359,362,364,366,393,410,426,434,436,438,440,443,446,447,456,458,460,462,470,477,479,481,484,496,497,502,505,507,509,518,521,524,525,526,906,907,912,914,915,916,946,968,1020,1025,1026,6904,6912,6913,7008,7010,7014,7107,7301,7302,7303,7304,7305,7306,7308,7902,7908,7911,7914,7916,8920,8940,8960,10301,10325,10331,11110,11130,11132,11140,11151,11170,13846,13848,19744,21120,28724,29207,29208,29209,29211,29212,29213,29215,32122,33104,33898,33899,33900]&extraInfo=Profil:P_25",
+"mediapackId": "external-ocs"
+},
+{
+"title": "RadioLine2",
+"logoUrl": "http://static.canal-overseas.com/x1/img/logo-radioline.png",
+"channels": [
+60095,
+60035
+],
+"applicationType": "toto",
+"url": "http://x1-tools.canal-overseas.com/apps/radioCOS/?zone=50",
+"name": "RadioLine2"
+},
+{
+"title": "Re-start",
+"logoUrl": "https://thumb.canalplus.pro/http/unsafe/static.canal-overseas.com/x1/img/LOGO_RESTART.png",
+"applicationType": "restartAld",
+"url": "Field is requiered for the moment",
+"name": "restart"
+}
+],
+"apps": [
+{
+"url": "http://x1-tools.canal-overseas.com/apps/radioCOS/?zone=60",
+"imgSrc": "http://static.canal-overseas.com/x1/img/logo-radioline.png",
+"name": "RadioLine"
+}
+],
+"version": "0.1.0",
+"env": "prod",
+"eck": "x1",
+"channels": {
+"programsNowNextPollInterval": 300000,
+"pdsUrl": "https://static.canal-overseas.com/x1/pds/24_60_channels.json",
+"vectors": [
+67001,
+63001
+],
+"defaultChannelId": 60020,
+"programsNowNextUrl": "http://webtv-static.canal-plus.com/metadata/All-cos-v1.1/globalchannels_z60.json"
+},
+"channel": {
+"programDetailUrl": "http://service.canal-overseas.com/ott-frontend/vector/67001/event/{DiffId}",
+"programsUrl": "http://webtv-static.canal-plus.com/metadata/Canal-cos-v1.1/chid{EpgId}.json",
+"programsPollInterval": 300000,
+"scheduleUrl": "http://service.canal-overseas.com/ott-frontend/vector/67001/channel/{ChannelId}/events?filter.day={Day}&pdsDevice=[{ChannelId}]&pdsNormal=[{ChannelId}]&pdsOtt=[{ChannelId}]"
+},
+"program": {
+"detailUrl": "http://service.canal-overseas.com/ott-frontend/vector/67001/event/{DiffId}"
+},
+"parental": {
+"url": "https://secure-stb.canal-plus.com/WebPortal/ottlivetv/api/v4/zones/REU/devices/24/apps/1/jobs/{method}",
+"csaHours": [
+0,
+6
+],
+"scriptInfoSet": "setparentbymsd",
+"scriptInfoCheck": "checkparentbymsd",
+"scriptInfoGet": "getparentbymsd"
+},
+"inactivityTimeout": 14400000,
+"user": {
+"url": "https://secure-stb.canal-plus.com/WebPortal/X1COS/AboProfile/api/subscriberinfos",
+"loginMethod": "cert"
+},
+"errors": {
+"core": {
+"timeout": "Impossible d'accÃ©der au contenu, veuillez vÃ©rifier votre connexion internet"
+},
+"webservice": {
+"request": "Une erreur technique a Ã©tÃ© dÃ©tectÃ©e lors de l'accÃ¨s au contenu. Si le problÃ¨me persiste, rendez-vous sur l'assistance de myCANAL.",
+"conso3": "Ce contenu ne fait pas partie de votre abonnement. Erreur CONSO-3",
+"drm3": "Un problÃ¨me est survenu lors de l'accÃ¨s Ã  cette chaine. Si le problÃ¨me, persiste veuillez contacter le support client CANAL+/CANALSAT. Erreur DRM-3",
+"drm4": "Un problÃ¨me est survenu lors de l'accÃ¨s Ã  cette chaine. Si le problÃ¨me, persiste veuillez contacter le support client CANAL+/CANALSAT. Erreur DRM-4",
+"drm5": "Nombre maximum de licences tÃ©lÃ©chargÃ©es atteint. Veuillez vous munir de votre numÃ©ro d'abonnÃ© et appeler le Service Client au 0892 39 39 10 (0.34 cts/min, Horaire d'ouverture : 8h Ã  22h, sauf Dimanche et jours fÃ©riÃ©s). Erreur DRM-5",
+"conso29": "DÃ©solÃ©, vous avez atteint le nombre maximum de visionnages pour ce contenu. Vous ne pouvez plus le regarder. Pour plus d'informations, rendez-vous sur l'assistance de myCANAL. Erreur CONSO-29",
+"liveaut3": "Un problÃ¨me est survenu lors de l'accÃ¨s Ã  la live TV. Si le problÃ¨me persiste, veuillez contacter le support client CANAL+/CANALSAT. Erreur AUT-3",
+"conso28": "DÃ©solÃ©, vous avez atteint le nombre maximum de tÃ©lÃ©chargements pour ce contenu. Vous ne pouvez plus le regarder. Pour plus d'informations, rendez-vous sur l'assistance de myCANAL. Erreur CONSO-28",
+"cat1": "Une erreur technique a Ã©tÃ© dÃ©tectÃ©e sur le serveur de vidÃ©o Ã  la demande. Si le problÃ¨me persiste, rendez-vous sur l'assistance de CANALPLAY. Erreur CAT-1",
+"drm1": "Mise Ã  jour technique en cours pour amÃ©liorer le service. Veuillez nous excuser pour la gÃªne occasionnÃ©e et vous reconnecter ultÃ©rieurement au service. Erreur DRM-1",
+"cat8": "Une erreur technique a Ã©tÃ© dÃ©tectÃ©e sur le serveur de vidÃ©o Ã  la demande. Si le problÃ¨me persiste, rendez-vous sur l'assistance de CANALPLAY. Erreur CAT-8",
+"unknow": "Impossible d'accÃ©der au contenu, veuillez vÃ©rifier votre connexion internet",
+"ord0": "DÃ©solÃ©, ce contenu n'est plus disponible. Erreur ORD-0",
+"conso30": "Vous avez utilisÃ© votre Compte CANAL sur plus de 5 Ã©quipements dans les 3 derniers jours. Pour continuer Ã  utiliser la vidÃ©o Ã  la demande vous devez attendre 3 jours maximum, ou appeler le support client de CANAL+/CANALSAT. Erreur CONSO-30",
+"conso23": "DÃ©solÃ©, vous avez atteint le nombre maximum de visionnages pour ce contenu. Vous ne pouvez plus le regarder. Pour plus d'informations, rendez-vous sur l'assistance de myCANAL. Erreur CONSO-23",
+"conso12": "Une erreur technique a Ã©tÃ© dÃ©tectÃ©e sur le serveur de vidÃ©o Ã  la demande. Si le problÃ¨me persiste, rendez-vous sur l'assistance de myCANAL. Erreur CONSO-12",
+"liveaut5": "Vous avez utilisÃ© votre Compte CANAL sur plus de 5 Ã©quipements dans les 3 derniers jours. Pour continuer Ã  utiliser la Live TV avec toutes vos chaÃ®nes vous devez attendre 3 jours maximum, ou appeler le support client de CANAL+/CANALSAT. Erreur AUT-5",
+"aut21": "Votre compte CANAL est actuellement utilisÃ© par un autre utilisateur. Si vous ne connaissez pas cet utilisateur, nous vous conseillons de modifier immÃ©diatement le mot de passe de votre compte. Erreur AUT-21",
+"conso10": "DÃ©solÃ©, la date de validitÃ© de ce contenu vient d'Ãªtre dÃ©passÃ©e. Vous ne pouvez plus le regarder. Pour plus d'informations, rendez-vous sur l'assistance de myCANAL Erreur CONS-10",
+"conso9": "DÃ©solÃ©, vous avez atteint le nombre maximum de tÃ©lÃ©chargements pour ce contenu. Vous ne pouvez plus le tÃ©lÃ©charger. Pour plus d'informations, rendez-vous sur l'assistance de myCANAL. Erreur CONSO-9",
+"liveaut4": "Un problÃ¨me est survenu lors de l'accÃ¨s Ã  la live TV. Si le problÃ¨me persiste, veuillez contacter le support client CANAL+/CANALSAT. Erreur AUT-4",
+"aut30": "Une erreur technique a Ã©tÃ© dÃ©tectÃ©e sur le serveur de vidÃ©o Ã  la demande. Si le problÃ¨me persiste, rendez-vous sur l'assistance de CANALPLAY. Erreur AUT-30",
+"drm7": "Un problÃ¨me est survenu lors de l'accÃ¨s Ã  cette chaine. Si le problÃ¨me, persiste veuillez contacter le support client CANAL+/CANALSAT. Erreur DRM-7",
+"ord14": "Ce contenu est actuellement bloquÃ©. Si le problÃ¨me persiste, rendez-vous sur l'assistance de myCANAL. Erreur ORD-14",
+"drm2": "Mise Ã  jour technique en cours pour amÃ©liorer le service. Veuillez nous excuser pour la gÃªne occasionnÃ©e et vous reconnecter ultÃ©rieurement au service. Erreur DRM-2",
+"program": "Impossible d'accÃ©der au contenu",
+"aut2": "Votre compte CANAL est actuellement bloquÃ©. Si le problÃ¨me persiste, rendez-vous sur l'assistance de myCANAL. Erreur AUT-2",
+"drm6": "Un problÃ¨me est survenu lors de l'accÃ¨s Ã  cette chaine. Si le problÃ¨me, persiste veuillez contacter le support client CANAL+/CANALSAT. Erreur DRM-6",
+"liveaut2": "Mise Ã  jour technique en cours pour amÃ©liorer le service. Veuillez nous excuser pour la gÃªne occasionnÃ©e et vous reconnecter ultÃ©rieurement au service. Erreur AUT-2",
+"conso22": "DÃ©solÃ©, vous avez atteint le nombre maximum de visionnages pour ce contenu. Vous ne pouvez plus le regarder. Pour plus d'informations, rendez-vous sur l'assistance de myCANAL. Erreur CONSO-22",
+"channels": "Impossible d'accÃ©der aux chaÃ®nes",
+"conso27": "DÃ©solÃ©, vous avez atteint le nombre maximum de visionnages pour ce contenu. Vous ne pouvez plus le regarder. Pour plus d'informations, rendez-vous sur l'assistance de myCANAL. Erreur CONSO-27",
+"ord16": "Ce contenu ne fait pas partie de votre abonnement. Erreur ORD-16"
+},
+"session": {
+"maxstream": "Le nombre maximum de connexions simultanÃ©es autorisÃ©es avec votre compte a Ã©tÃ© dÃ©passÃ©. Vous avez Ã©tÃ© dÃ©connectÃ© au profit d'un autre utilisateur. Si cette action a Ã©tÃ© rÃ©alisÃ©e indÃ©pendamment de votre volontÃ©, vous devriez immÃ©diatement modifier le mot de passe de votre compte.",
+"noStartover": "La diffusion en reprise de lecture de ce programme n'est pas autorisÃ©e sur votre outil.",
+"expired": "Votre session de huit heures a expirÃ©. Veuillez redÃ©marrer le lecteur pour poursuivre le visionnage.",
+"noLivepc": "La diffusion en direct de ce programme n'est pas disponible sur votre outil.",
+"noCrypt": "La lecture de ce programme n'est pas autorisÃ©e en chiffrÃ©.",
+"csaRestrictedHours": "Les programmes adultes ne sont accessibles qu'entre minuit et 5h.",
+"csaBrokenMetadata": "En raison d'une panne sur les donnÃƒÂ©es programme, le flux est interrompu pour risque de contenu CSA 5",
+"unsubscribed": "Cette chaine ne fait pas partie de votre abonnement",
+"csaUnauthorized": "Les paramÃ¨tres de votre compte ne vous permettent pas d'accÃ©der aux contenus adultes."
+}
+},
+"tracking": {
+"logmaticKey": "UcQ4HMI9SdapxHij1drH0Q",
+"googleAnalyticsId": "UA-92524381-1"
+},
+"vodLicenses": {
+"url": "https://vod-authorization.canal-overseas.com/vod/play/wvX1?eck=X1"
+},
+"liveLicenses": {
+"url": "https://secure-stb.canal-plus.com/WebPortal/X1COS/DRM/api/Licence"
+},
+"name": "cos-reunion",
+"region": {
+"name": "Réunion",
+"urlGeoip": "http://x1-tools.canal-overseas.com/geoip/",
+"code": "60"
+},
+"playerPingLog": {
+"url": "https://secure-stb.canal-plus.com/WebPortal/ppl/api/v3/zones/60/devices/24/apps/60/jobs/dispatch",
+"startInterval": [
+20000,
+40000
+],
+"flushInterval": 120000
+},
+"hapi": {
+"url": "https://secure-mycanal-player-pc-ws3.canal-plus.com/catalog/unit/{resolution_id}/medias",
+"headers": {
+"operator": "x1",
+"domain": "reu",
+"service": "mycanal",
+"subOffers": "RALD_CS_BASIC, RALD_PANO, RALD_THEM, RALD_OCS, RALD_CINE"
+}
+}
+}
