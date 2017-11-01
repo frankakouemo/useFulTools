@@ -1,0 +1,10 @@
+searching file contains string : find . -name 'access.log' -exec grep "500 {} \;
+
+search_for_string_in_file_recursive : find . -name 'access.log*' -exec cat {} \; | grep "500"
+find ig : idemm | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b"
+rm -rf * .* -- don't miss the hide file 
+
+
+count number of file in a dir : ls -a | wc -l | awk '{$1-=2; print}'
+
+simple_sort : cat access.log | sort 
