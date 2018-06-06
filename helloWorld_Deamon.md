@@ -3,7 +3,7 @@
 First look at 
 https://forum.hardware.fr/hfr/OSAlternatifs/Codes-scripts/lancer-demarrage-linux-sujet_61866_1.htm
 
-thent add this parameter at the top of the script 
+then add this parameter at the top of the script 
 https://www.debian-fr.org/t/installation-de-script-missing-lsb-tags-and-overrides/23043/12
 
 
